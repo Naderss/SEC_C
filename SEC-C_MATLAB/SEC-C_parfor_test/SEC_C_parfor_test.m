@@ -1,4 +1,5 @@
 %SEC-C_parfor_test
+%run matched filtering using SEC-C for 365 days of seismic data using parfor
 
 %Nader Shakibay Senobari, summer 2018
 
