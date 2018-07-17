@@ -1,4 +1,4 @@
-%SEC-C_parfor_toy
+%SEC-C_parfor_test
 
 %Nader Shakibay Senobari, summer 2018
 
@@ -56,7 +56,7 @@ mkdir(CCC_dir);
 
 
 %Start a paraller pool using n_threads
-%parpool('local',n_threads);
+parpool('local',n_threads);
 
 
 tic
@@ -66,7 +66,7 @@ parfor i=1:365
     data_ind=loading_data(data_d{i});
     
     tic
-    [ccc_sum]=SEC_C(data_ind,templates,k,moveouts,weights);
+    [ccc_sum]=SEC_C(data_ind,templates,k,moveouts,weights,1);
     t{i}=toc;
     
     save_CCC_sum(ccc_sum,CCC_dir,i);
@@ -74,7 +74,7 @@ end
 total_time=toc;
 
 display(['matched filtering took ', num2str(total_time),'seconds']);
-display(['SEC-C runtime per day took ' num2str(sum([t{:}])/(8*365)),' seconds']);
+display(['SEC-C runtime per day took ' num2str(sum([t{:}])/(n_threads*365)),' seconds']);
 
-%delete(gcp('nocreate'))
+delete(gcp('nocreate'))
 
