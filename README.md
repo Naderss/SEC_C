@@ -10,8 +10,6 @@ SEC-C is written in MATLAB but a python version is also provided. The current py
 
 SEC-C has two main branches: SEC-C for continues data (i.e. template matching or matched filtering) and SEC-C for individual waveforms (i.e. pairwise cross-correlation). Former is already uloaded and the latter will be uploaded in near future. 
 
-For retrieving and preproccess data using Matlab you can check below tools:
+A toy example of performing template matching that includes, retrieving, prepossessing, performing template matching using SEC-C and postprocessing results for Mt St Helens seismicity is now inlcuded (Mt_St_Helens_example.m).
 
-1) GISMO: https://geoscience-community-codes.github.io/GISMO/
 
-2)IrisFetch: https://ds.iris.edu/ds/nodes/dmc/software/downloads/irisFetch.m/2-0-6/manual/
