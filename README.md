@@ -11,3 +11,6 @@ SEC-C is written in MATLAB, but a python version is also provided. The current p
 SEC-C has two main branches: SEC-C for continues data (i.e., template matching or matched filtering) and SEC-C for individual waveforms (i.e., pairwise cross-correlation). Former is already uploaded, and we are going to upload the individual case soon.
 
 A toy example of performing template matching that includes, retrieving, prepossessing, performing template matching using SEC-C and postprocessing results for Mt St Helens seismicity is now included (Mt_St_Helens_example.m).
+
+
+Email: nshak006@ucr.edu
